@@ -29,6 +29,8 @@ COUNT(ID)  BENCHMARK_NAME__C                           AVG(DURATION_MILLISECONDS
 15         Multiple Flow Single Criteria Field Update  312.73333333333335
 15         After Save Flow On Insert                   443.53333333333336
 15         Process Builder No Criteria On Insert       568.0666666666667
+14         Before Save Metadata Flow On Insert         2003.357142857143
+Total number of records retrieved: 10.
 
 
 
@@ -49,6 +51,7 @@ After Record Flow
 
 
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Workflow Update Field On Insert'];
+delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Before Save Metadata Flow On Insert'];
 
 
 new RecordAutomationBenchmarking().runBeforeSaveFlowOnInsertBenchmark();
@@ -71,14 +74,8 @@ Trigger_Action__mdt
 
 
 
+delete [SELECT Id FROM Metadata_Before_Save_Flow_Update__c];
 insert new Metadata_Before_Save_Flow_Update__c();
 
 SELECT FIELDS(ALL) FROM Metadata_Before_Save_Flow_Update__c LIMIT 200
 
-ID                  OWNERID             ISDELETED  NAME             CREATEDDATE                   CREATEDBYID         LASTMODIFIEDDATE              LASTMODIFIEDBYID    SYSTEMMODSTAMP                TEXT_1__C
-──────────────────  ──────────────────  ─────────  ───────────────  ────────────────────────────  ──────────────────  ────────────────────────────  ──────────────────  ────────────────────────────  ─────────
-a0CP0000007xm0QMAQ  005P000000859hmIAA  false      Test             2021-07-20T03:42:24.000+0000  005P000000859hmIAA  2021-07-20T03:42:24.000+0000  005P000000859hmIAA  2021-07-20T03:42:24.000+0000  null
-a0CP0000007xm0VMAQ  005P000000859hmIAA  false      Test             2021-07-20T03:43:07.000+0000  005P000000859hmIAA  2021-07-20T03:43:07.000+0000  005P000000859hmIAA  2021-07-20T03:43:07.000+0000  null
-a0CP0000007xm0kMAA  005P000000859hmIAA  false      Test             2021-07-20T03:46:13.000+0000  005P000000859hmIAA  2021-07-20T03:46:13.000+0000  005P000000859hmIAA  2021-07-20T03:46:13.000+0000  null
-a0CP0000007xm0GMAQ  005P000000859hmIAA  false      a0CP0000007xm0G  2021-07-20T03:38:19.000+0000  005P000000859hmIAA  2021-07-20T03:38:19.000+0000  005P000000859hmIAA  2021-07-20T03:38:19.000+0000  null
-Total number of records retrieved: 4.

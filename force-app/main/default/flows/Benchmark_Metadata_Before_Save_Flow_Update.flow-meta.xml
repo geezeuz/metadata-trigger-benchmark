@@ -2,6 +2,22 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>52.0</apiVersion>
     <assignments>
+        <name>Add_Record_to_newListAfterFlow</name>
+        <label>Add Record to newListAfterFlow</label>
+        <locationX>264</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>newListAfterFlow</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Assignment</name>
         <label>Assignment</label>
         <locationX>264</locationX>
@@ -14,7 +30,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop</targetReference>
+            <targetReference>Add_Record_to_newListAfterFlow</targetReference>
         </connector>
     </assignments>
     <interviewLabel>Metadata Before Record Flow {!$Flow.CurrentDateTime}</interviewLabel>

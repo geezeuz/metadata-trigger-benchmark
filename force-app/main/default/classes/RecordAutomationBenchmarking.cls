@@ -8,6 +8,10 @@ public with sharing class RecordAutomationBenchmarking {
         recordCount = 200;
     }
 
+    public void runBeforeSaveMetadataFlowOnInsertBenchmark() {
+        runRecordInsertBenchmark('Before Save Metadata Flow On Insert', Metadata_Before_Save_Flow_Update__c.SObjectType);
+    }
+
     public void runBeforeSaveFlowOnInsertBenchmark() {
         runRecordInsertBenchmark('Before Save Flow On Insert', Before_Save_Field_Update__c.SObjectType);
     }

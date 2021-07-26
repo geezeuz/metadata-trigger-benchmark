@@ -34,42 +34,54 @@ public inherited sharing virtual class TriggerBase {
 	}
 
 	public void run() {
+		System.debug('HERE 1');
 		if (!validateRun()) {
 			return;
 		}
+		System.debug('HERE 2');
 		if (
 			this.context == System.TriggerOperation.BEFORE_INSERT &&
 			this instanceof TriggerAction.BeforeInsert
-		) {
-			((TriggerAction.BeforeInsert) this).beforeInsert(triggerNew);
-		} else if (
-			this.context == System.TriggerOperation.AFTER_INSERT &&
-			this instanceof TriggerAction.AfterInsert
-		) {
+			) {
+				System.debug('HERE 2.1');
+				((TriggerAction.BeforeInsert) this).beforeInsert(triggerNew);
+			} else if (
+				this.context == System.TriggerOperation.AFTER_INSERT &&
+				this instanceof TriggerAction.AfterInsert
+				) {
+			System.debug('HERE 3');
 			((TriggerAction.AfterInsert) this).afterInsert(triggerNew);
 		} else if (
 			this.context == System.TriggerOperation.BEFORE_UPDATE &&
 			this instanceof TriggerAction.BeforeUpdate
-		) {
+			) {
+			System.debug('HERE 4');
 			for (SObject obj : triggerNew) {
+				System.debug('HERE 5');
 				if (!idToNumberOfTimesSeenBeforeUpdate.containsKey(obj.id)) {
+					System.debug('HERE 5');
 					idToNumberOfTimesSeenBeforeUpdate.put(obj.id, 1);
 				} else {
+					System.debug('HERE 7');
 					idToNumberOfTimesSeenBeforeUpdate.put(
 						obj.id,
 						idToNumberOfTimesSeenBeforeUpdate.get(obj.id) + 1
-					);
+						);
+					}
 				}
-			}
-			((TriggerAction.BeforeUpdate) this).beforeUpdate(triggerNew, triggerOld);
-		} else if (
-			this.context == System.TriggerOperation.AFTER_UPDATE &&
-			this instanceof TriggerAction.AfterUpdate
-		) {
+				((TriggerAction.BeforeUpdate) this).beforeUpdate(triggerNew, triggerOld);
+			} else if (
+				this.context == System.TriggerOperation.AFTER_UPDATE &&
+				this instanceof TriggerAction.AfterUpdate
+				) {
+			System.debug('HERE 8');
 			for (SObject obj : triggerNew) {
+				System.debug('HERE 9');
 				if (!idToNumberOfTimesSeenAfterUpdate.containsKey(obj.id)) {
+					System.debug('HERE 10');
 					idToNumberOfTimesSeenAfterUpdate.put(obj.id, 1);
 				} else {
+					System.debug('HERE 11');
 					idToNumberOfTimesSeenAfterUpdate.put(
 						obj.id,
 						idToNumberOfTimesSeenAfterUpdate.get(obj.id) + 1

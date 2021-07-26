@@ -6,4 +6,5 @@
 // new RecordAutomationBenchmarking().runBeforeDeleteFlowInsertChildRecordsBenchmark();
 // new RecordAutomationBenchmarking().runBeforeDeleteTriggerInsertChildRecordsBenchmark();
 // new RecordAutomationBenchmarking().runSingleFlowMultipleCriteriaEvalOnInsertBenchmark();
-new RecordAutomationBenchmarking().runMultipleFlowSingleCriteriaEvalOnInsertBenchmark();
+// new RecordAutomationBenchmarking().runMultipleFlowSingleCriteriaEvalOnInsertBenchmark();
+new RecordAutomationBenchmarking().runBeforeSaveMetadataFlowOnInsertBenchmark();

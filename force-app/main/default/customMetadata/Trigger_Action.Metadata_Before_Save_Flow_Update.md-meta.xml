@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>After_Insert__c</field>
-        <value xsi:type="xsd:string">Metadata_Before_Save_Flow_Update</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>After_Undelete__c</field>
@@ -32,7 +32,7 @@
     </values>
     <values>
         <field>Before_Insert__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">Metadata_Before_Save_Flow_Update</value>
     </values>
     <values>
         <field>Before_Update__c</field>
@@ -48,7 +48,7 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:type="xsd:string">Test after process insert</value>
+        <value xsi:type="xsd:string">Test before insert</value>
     </values>
     <values>
         <field>Flow_Name__c</field>
