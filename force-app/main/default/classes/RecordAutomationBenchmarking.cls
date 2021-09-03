@@ -8,6 +8,18 @@ public with sharing class RecordAutomationBenchmarking {
         recordCount = 200;
     }
 
+    public void runAfterApexTriggerUpdateBenchmark() {
+        runRecordInsertBenchmark('After Apex Trigger Update', After_Apex_Trigger_Update__c.SObjectType);
+    }
+
+    public void runBeforeApexTriggerUpdateBenchmark() {
+        runRecordInsertBenchmark('Before Apex Trigger Update', Before_Apex_Trigger_Update__c.SObjectType);
+    }
+
+    public void runBeforeSaveMetadataApexOnInsertBenchmark() {
+        runRecordInsertBenchmark('Before Save Metadata Apex On Insert', Metadata_Before_Save_Apex_Update__c.SObjectType);
+    }
+
     public void runBeforeSaveMetadataFlowOnInsertBenchmark() {
         runRecordInsertBenchmark('Before Save Metadata Flow On Insert', Metadata_Before_Save_Flow_Update__c.SObjectType);
     }

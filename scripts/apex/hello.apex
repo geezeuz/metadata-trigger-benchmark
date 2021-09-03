@@ -7,4 +7,7 @@
 // new RecordAutomationBenchmarking().runBeforeDeleteTriggerInsertChildRecordsBenchmark();
 // new RecordAutomationBenchmarking().runSingleFlowMultipleCriteriaEvalOnInsertBenchmark();
 // new RecordAutomationBenchmarking().runMultipleFlowSingleCriteriaEvalOnInsertBenchmark();
-new RecordAutomationBenchmarking().runBeforeSaveMetadataFlowOnInsertBenchmark();
+// new RecordAutomationBenchmarking().runBeforeSaveMetadataFlowOnInsertBenchmark();
+// new RecordAutomationBenchmarking().runBeforeSaveMetadataApexOnInsertBenchmark();
+// new RecordAutomationBenchmarking().runBeforeApexTriggerUpdateBenchmark();
+new RecordAutomationBenchmarking().runAfterApexTriggerUpdateBenchmark();

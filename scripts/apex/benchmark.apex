@@ -20,7 +20,7 @@ SELECT COUNT(ID),BENCHMARK_NAME__C,AVG(DURATION_MILLISECONDS__C) FROM Benchmark_
 
 COUNT(ID)  BENCHMARK_NAME__C                           AVG(DURATION_MILLISECONDS__C)
 ─────────  ──────────────────────────────────────────  ─────────────────────────────
-15         Trigger Update Field On Insert              75.26666666666667
+15         Trigger Update Field On Insert              75.26666666666667  -> 90.000   -> 69.000
 15         Before Save Flow On Insert                  78.73333333333333
 15         Workflow Update Field On Insert             99.66666666666667
 15         Single Flow Multi Criteria Field Update     103.93333333333334
@@ -29,7 +29,7 @@ COUNT(ID)  BENCHMARK_NAME__C                           AVG(DURATION_MILLISECONDS
 15         Multiple Flow Single Criteria Field Update  312.73333333333335
 15         After Save Flow On Insert                   443.53333333333336
 15         Process Builder No Criteria On Insert       568.0666666666667
-14         Before Save Metadata Flow On Insert         2003.357142857143
+14         Before Save Metadata Flow On Insert         2003.357142857143                -> 1900.00
 Total number of records retrieved: 10.
 
 
@@ -52,6 +52,7 @@ After Record Flow
 
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Workflow Update Field On Insert'];
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Before Save Metadata Flow On Insert'];
+delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Before Apex Trigger Update'];
 
 
 new RecordAutomationBenchmarking().runBeforeSaveFlowOnInsertBenchmark();
@@ -78,4 +79,14 @@ delete [SELECT Id FROM Metadata_Before_Save_Flow_Update__c];
 insert new Metadata_Before_Save_Flow_Update__c();
 
 SELECT FIELDS(ALL) FROM Metadata_Before_Save_Flow_Update__c LIMIT 200
+
+delete [SELECT Id FROM Metadata_Before_Save_Apex_Update__c];
+insert new Metadata_Before_Save_Apex_Update__c();
+
+SELECT FIELDS(ALL) FROM Metadata_Before_Save_Apex_Update__c LIMIT 200
+
+delete [SELECT Id FROM Before_Apex_Trigger_Update__c];
+insert new Before_Apex_Trigger_Update__c();
+
+SELECT FIELDS(ALL) FROM Before_Apex_Trigger_Update__c LIMIT 200
 
