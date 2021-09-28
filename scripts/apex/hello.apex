@@ -9,5 +9,5 @@
 // new RecordAutomationBenchmarking().runMultipleFlowSingleCriteriaEvalOnInsertBenchmark();
 // new RecordAutomationBenchmarking().runBeforeSaveMetadataFlowOnInsertBenchmark();
 // new RecordAutomationBenchmarking().runBeforeSaveMetadataApexOnInsertBenchmark();
-// new RecordAutomationBenchmarking().runBeforeApexTriggerUpdateBenchmark();
-new RecordAutomationBenchmarking().runAfterApexTriggerUpdateBenchmark();
+new RecordAutomationBenchmarking().runBeforeApexTriggerUpdateBenchmark();
+// new RecordAutomationBenchmarking().runAfterApexTriggerUpdateBenchmark();

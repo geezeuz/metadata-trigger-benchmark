@@ -2,7 +2,7 @@
 
 
 
-// SELECT FIELDS(ALL) FROM After_Save_Field_Update__c LIMIT 200
+// SELECT FIELDS(ALL) FROM Flow_After_Insert__c LIMIT 200
 // SELECT FIELDS(ALL) FROM Before_Delete_Child__c LIMIT 200
 // SELECT FIELDS(ALL) FROM Before_Delete_Example__c LIMIT 200
 // SELECT FIELDS(ALL) FROM Before_Delete_Trigger_Example__c LIMIT 200

@@ -82,7 +82,7 @@
     </classAccesses>
     <fieldPermissions>
         <editable>true</editable>
-        <field>After_Save_Field_Update__c.Text_1__c</field>
+        <field>Flow_After_Insert__c.Text_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -92,7 +92,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>After_Apex_Trigger_Update__c.Text_1__c</field>
+        <field>Trigger_After_Insert__c.Text_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -268,7 +268,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>After_Save_Field_Update__c</object>
+        <object>Flow_After_Insert__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -286,7 +286,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>After_Apex_Trigger_Update__c</object>
+        <object>Trigger_After_Insert__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

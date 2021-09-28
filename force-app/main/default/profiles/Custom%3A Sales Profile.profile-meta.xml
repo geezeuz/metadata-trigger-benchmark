@@ -83,7 +83,7 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>false</editable>
-        <field>After_Save_Field_Update__c.Text_1__c</field>
+        <field>Flow_After_Insert__c.Text_1__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -39,7 +39,7 @@
                 <stringValue>Benchmark Test</stringValue>
             </value>
         </inputAssignments>
-        <object>After_Save_Field_Update__c</object>
+        <object>Flow_After_Insert__c</object>
     </recordUpdates>
     <start>
         <locationX>86</locationX>
@@ -47,7 +47,7 @@
         <connector>
             <targetReference>Set_Default_Text_Field</targetReference>
         </connector>
-        <object>After_Save_Field_Update__c</object>
+        <object>Flow_After_Insert__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>

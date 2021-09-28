@@ -9,11 +9,11 @@ public with sharing class RecordAutomationBenchmarking {
     }
 
     public void runAfterApexTriggerUpdateBenchmark() {
-        runRecordInsertBenchmark('After Apex Trigger Update', After_Apex_Trigger_Update__c.SObjectType);
+        runRecordInsertBenchmark('Trigger After Insert (Simple)', Trigger_After_Insert__c.SObjectType);
     }
 
     public void runBeforeApexTriggerUpdateBenchmark() {
-        runRecordInsertBenchmark('Before Apex Trigger Update', Before_Apex_Trigger_Update__c.SObjectType);
+        runRecordInsertBenchmark('Before Apex Trigger Update (TriggerHandler)', Before_Apex_Trigger_Update__c.SObjectType);
     }
 
     public void runBeforeSaveMetadataApexOnInsertBenchmark() {
@@ -29,7 +29,7 @@ public with sharing class RecordAutomationBenchmarking {
     }
     
     public void runAfterSaveFlowOnInsertBenchmark() {
-        runRecordInsertBenchmark('After Save Flow On Insert', After_Save_Field_Update__c.SObjectType);
+        runRecordInsertBenchmark('After Save Flow On Insert', Flow_After_Insert__c.SObjectType);
     }
 
     public void runProcessBuilderOnInsertBenchmark() {
