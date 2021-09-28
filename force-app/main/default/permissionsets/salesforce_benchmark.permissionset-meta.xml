@@ -80,6 +80,14 @@
         <apexClass>TriggerBaseTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>Trigger_Before_Insert_Trigger_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TriggerHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>Flow_After_Insert__c.Text_1__c</field>
@@ -87,7 +95,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Before_Apex_Trigger_Update__c.Text_1__c</field>
+        <field>Trigger_Before_Insert_Trigger_Handler__c.Text_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -217,7 +225,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Before_Trigger_Field_Update__c.Test_1__c</field>
+        <field>Trigger_Before_Insert__c.Test_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -247,7 +255,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Metadata_Before_Save_Apex_Update__c.Text_1__c</field>
+        <field>Trigger_Before_Insert_TAF__c.Text_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -277,7 +285,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Before_Apex_Trigger_Update__c</object>
+        <object>Trigger_Before_Insert_Trigger_Handler__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -349,7 +357,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Before_Trigger_Field_Update__c</object>
+        <object>Trigger_Before_Insert__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -376,7 +384,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Metadata_Before_Save_Apex_Update__c</object>
+        <object>Trigger_Before_Insert_TAF__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

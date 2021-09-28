@@ -9,7 +9,7 @@
 // SELECT FIELDS(ALL) FROM Before_Save_Field_Update__c LIMIT 200
 // SELECT FIELDS(ALL) FROM Before_Save_Multiple_Flow_Single_Update__c LIMIT 200
 // SELECT FIELDS(ALL) FROM Before_Save_Single_Flow_Multi_Update__c LIMIT 200
-// SELECT FIELDS(ALL) FROM Before_Trigger_Field_Update__c LIMIT 200
+// SELECT FIELDS(ALL) FROM Trigger_Before_Insert__c LIMIT 200
 // SELECT FIELDS(ALL) FROM Process_Builder__c LIMIT 200
 // SELECT FIELDS(ALL) FROM Workflow_Field_Update__c LIMIT 200
 
@@ -80,13 +80,13 @@ insert new Metadata_Before_Save_Flow_Update__c();
 
 SELECT FIELDS(ALL) FROM Metadata_Before_Save_Flow_Update__c LIMIT 200
 
-delete [SELECT Id FROM Metadata_Before_Save_Apex_Update__c];
-insert new Metadata_Before_Save_Apex_Update__c();
+delete [SELECT Id FROM Trigger_Before_Insert_TAF__c];
+insert new Trigger_Before_Insert_TAF__c();
 
-SELECT FIELDS(ALL) FROM Metadata_Before_Save_Apex_Update__c LIMIT 200
+SELECT FIELDS(ALL) FROM Trigger_Before_Insert_TAF__c LIMIT 200
 
-delete [SELECT Id FROM Before_Apex_Trigger_Update__c];
-insert new Before_Apex_Trigger_Update__c();
+delete [SELECT Id FROM Trigger_Before_Insert_Trigger_Handler__c];
+insert new Trigger_Before_Insert_Trigger_Handler__c();
 
-SELECT FIELDS(ALL) FROM Before_Apex_Trigger_Update__c LIMIT 200
+SELECT FIELDS(ALL) FROM Trigger_Before_Insert_Trigger_Handler__c LIMIT 200
 

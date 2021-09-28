@@ -1,4 +1,4 @@
-trigger TriggerAfterInsert on Trigger_After_Insert__c (after insert) {
+trigger Trigger_After_Insert on Trigger_After_Insert__c (after insert) {
 
     List<Trigger_After_Insert__c> records = new List<Trigger_After_Insert__c>();
     for(Trigger_After_Insert__c record : Trigger.new){

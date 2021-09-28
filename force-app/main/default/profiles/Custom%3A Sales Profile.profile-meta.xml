@@ -208,7 +208,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Before_Trigger_Field_Update__c.Test_1__c</field>
+        <field>Trigger_Before_Insert__c.Test_1__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

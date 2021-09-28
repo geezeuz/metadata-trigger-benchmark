@@ -13,11 +13,11 @@ public with sharing class RecordAutomationBenchmarking {
     }
 
     public void runBeforeApexTriggerUpdateBenchmark() {
-        runRecordInsertBenchmark('Before Apex Trigger Update (TriggerHandler)', Before_Apex_Trigger_Update__c.SObjectType);
+        runRecordInsertBenchmark('Trigger Before Insert (Trigger Handler)', Trigger_Before_Insert_Trigger_Handler__c.SObjectType);
     }
 
     public void runBeforeSaveMetadataApexOnInsertBenchmark() {
-        runRecordInsertBenchmark('Before Save Metadata Apex On Insert', Metadata_Before_Save_Apex_Update__c.SObjectType);
+        runRecordInsertBenchmark('Trigger Before Insert (Trigger Action Framework)', Trigger_Before_Insert_TAF__c.SObjectType);
     }
 
     public void runBeforeSaveMetadataFlowOnInsertBenchmark() {
@@ -29,7 +29,7 @@ public with sharing class RecordAutomationBenchmarking {
     }
     
     public void runAfterSaveFlowOnInsertBenchmark() {
-        runRecordInsertBenchmark('After Save Flow On Insert', Flow_After_Insert__c.SObjectType);
+        runRecordInsertBenchmark('Flow After Insert', Flow_After_Insert__c.SObjectType);
     }
 
     public void runProcessBuilderOnInsertBenchmark() {
@@ -37,7 +37,7 @@ public with sharing class RecordAutomationBenchmarking {
     }
 
     public void runTriggerUpdateFieldOnInsertBenchmark() {
-        runRecordInsertBenchmark('Trigger Update Field On Insert', Before_Trigger_Field_Update__c.SObjectType);
+        runRecordInsertBenchmark('Trigger Before Insert (Simple)', Trigger_Before_Insert__c.SObjectType);
     }
 
     public void runWorkflowUpdateFieldOnInsertBenchmark() {

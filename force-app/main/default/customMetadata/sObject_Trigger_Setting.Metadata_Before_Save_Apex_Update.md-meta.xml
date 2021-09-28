@@ -12,7 +12,7 @@
     </values>
     <values>
         <field>Object_API_Name__c</field>
-        <value xsi:type="xsd:string">Metadata_Before_Save_Apex_Update__c</value>
+        <value xsi:type="xsd:string">Trigger_Before_Insert_TAF__c</value>
     </values>
     <values>
         <field>Object_Namespace__c</field>
