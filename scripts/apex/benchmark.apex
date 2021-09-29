@@ -34,6 +34,21 @@ Total number of records retrieved: 10.
 
 
 
+// #region Apex Trigger
+    #RESULTS AFTER TRIGGER WITH LOGIC
+
+        COUNT(ID)  BENCHMARK_NAME__C              AVG(DURATION_MILLISECONDS__C)
+        ─────────  ─────────────────────────────  ─────────────────────────────
+        15         Trigger After Insert (Simple)  203.53333333333333
+
+    #RESULTS AFTER TRIGGER WITHOUT LOGIC
+
+        COUNT(ID)  BENCHMARK_NAME__C              AVG(DURATION_MILLISECONDS__C)
+        ─────────  ─────────────────────────────  ─────────────────────────────
+        15         Trigger After Insert (Simple)  193.73333333333332
+    
+// #endregion
+
 Before Record Save Flow
     NO Apex
     NO Subflow
@@ -50,6 +65,7 @@ After Record Flow
 
 
 
+delete [SELECT ID FROM Benchmark_Result__c];
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Workflow Update Field On Insert'];
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Before Save Metadata Flow On Insert'];
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Before Apex Trigger Update'];

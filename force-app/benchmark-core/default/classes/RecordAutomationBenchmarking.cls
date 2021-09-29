@@ -8,27 +8,27 @@ public with sharing class RecordAutomationBenchmarking {
         recordCount = 200;
     }
 
-    public void runAfterApexTriggerUpdateBenchmark() {
+    public void runTriggerAfterInsert() {
         runRecordInsertBenchmark('Trigger After Insert (Simple)', Trigger_After_Insert__c.SObjectType);
     }
 
-    public void runBeforeApexTriggerUpdateBenchmark() {
+    public void runTriggerBeforeInsertTriggerHandler() {
         runRecordInsertBenchmark('Trigger Before Insert (Trigger Handler)', Trigger_Before_Insert_Trigger_Handler__c.SObjectType);
     }
 
-    public void runBeforeSaveMetadataApexOnInsertBenchmark() {
+    public void runTriggerBeforeInsertTAF() {
         runRecordInsertBenchmark('Trigger Before Insert (Trigger Action Framework)', Trigger_Before_Insert_TAF__c.SObjectType);
     }
 
-    public void runBeforeSaveMetadataFlowOnInsertBenchmark() {
+    public void runMetadataBeforeSaveFlowUpdate() {
         runRecordInsertBenchmark('Before Save Metadata Flow On Insert', Metadata_Before_Save_Flow_Update__c.SObjectType);
     }
 
-    public void runBeforeSaveFlowOnInsertBenchmark() {
+    public void runBeforeSaveFieldUpdate() {
         runRecordInsertBenchmark('Before Save Flow On Insert', Before_Save_Field_Update__c.SObjectType);
     }
     
-    public void runAfterSaveFlowOnInsertBenchmark() {
+    public void runFlowAfterInsert() {
         runRecordInsertBenchmark('Flow After Insert', Flow_After_Insert__c.SObjectType);
     }
 
@@ -36,7 +36,7 @@ public with sharing class RecordAutomationBenchmarking {
         runRecordInsertBenchmark('Process Builder No Criteria On Insert', Process_Builder__c.SObjectType);
     }
 
-    public void runTriggerUpdateFieldOnInsertBenchmark() {
+    public void runTriggerBeforeInsert() {
         runRecordInsertBenchmark('Trigger Before Insert (Simple)', Trigger_Before_Insert__c.SObjectType);
     }
 

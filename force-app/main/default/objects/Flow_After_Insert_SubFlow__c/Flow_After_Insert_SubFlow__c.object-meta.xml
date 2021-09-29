@@ -153,14 +153,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Flow After Insert</label>
+    <label>Flow After Insert Subflow</label>
     <nameField>
         <displayFormat>ASFU Id {000000}</displayFormat>
-        <label>Flow After Insert Id</label>
+        <label>Flow After Insert Subflow Id</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Flow After Inserts</pluralLabel>
+    <pluralLabel>Flow After Insert Subflows</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

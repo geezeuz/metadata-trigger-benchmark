@@ -90,6 +90,16 @@
     </classAccesses>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Flow_After_Insert_Invocable_Method__c.Text_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flow_After_Insert_SubFlow__c.Text_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Flow_After_Insert__c.Text_1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -270,6 +280,24 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>salesforce-benchmark</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Flow_After_Insert_Invocable_Method__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Flow_After_Insert_SubFlow__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

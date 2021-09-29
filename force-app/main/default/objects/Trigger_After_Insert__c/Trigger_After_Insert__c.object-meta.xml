@@ -153,12 +153,12 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Before Apex Trigger Update</label>
+    <label>Trigger After Insert</label>
     <nameField>
-        <label>Before Apex Trigger Update Name</label>
+        <label>Trigger After Insert Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Before Apex Trigger Update</pluralLabel>
+    <pluralLabel>Trigger After Insert</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

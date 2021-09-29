@@ -153,12 +153,12 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Metadata Before Save Apex Update</label>
+    <label>Trigger Before Insert TAF</label>
     <nameField>
-        <label>Metadata Before Save Apex Update Name</label>
+        <label>Trigger Before Insert TAF Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Metadata Before Save Apex Update</pluralLabel>
+    <pluralLabel>Trigger Before Insert TAF</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

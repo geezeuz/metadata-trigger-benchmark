@@ -153,14 +153,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Before Trigger Field Update</label>
+    <label>Trigger Before Insert</label>
     <nameField>
         <displayFormat>btfu Id {000000}</displayFormat>
-        <label>Before Trigger Field Update Id</label>
+        <label>Trigger Before Insert Id</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Before Trigger Field Updates</pluralLabel>
+    <pluralLabel>Trigger Before Inserts</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
