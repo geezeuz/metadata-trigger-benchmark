@@ -65,13 +65,13 @@ After Record Flow
 
 
 
-delete [SELECT ID FROM Benchmark_Result__c];
+delete [SELECT Duration_Milliseconds__c, Notes__c, Record_Count__c, Benchmark_Name__c FROM Benchmark_Result__c];
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Workflow Update Field On Insert'];
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Before Save Metadata Flow On Insert'];
 delete [SELECT ID FROM Benchmark_Result__c WHERE BENCHMARK_NAME__C='Before Apex Trigger Update'];
+delete [SELECT ID FROM Benchmark_Result__c];
 
-
-new RecordAutomationBenchmarking().runBeforeSaveFlowOnInsertBenchmark();
+new RecordAutomationBenchmarking().runTriggerAfterInsert();
 // new RecordAutomationBenchmarking().runAfterSaveFlowOnInsertBenchmark();
 // new RecordAutomationBenchmarking().runProcessBuilderOnInsertBenchmark();
 // new RecordAutomationBenchmarking().runTriggerUpdateFieldOnInsertBenchmark();

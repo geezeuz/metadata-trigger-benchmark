@@ -20,6 +20,10 @@ public with sharing class RecordAutomationBenchmarking {
         runRecordInsertBenchmark('Trigger Before Insert (Trigger Action Framework)', Trigger_Before_Insert_TAF__c.SObjectType);
     }
 
+    public void runTriggerBeforeInsertTAFModified() {
+        runRecordInsertBenchmark('Trigger Before Insert TAFModified', Trigger_Before_Insert_TAFModified__c.SObjectType);
+    }
+
     public void runMetadataBeforeSaveFlowUpdate() {
         runRecordInsertBenchmark('Before Save Metadata Flow On Insert', Metadata_Before_Save_Flow_Update__c.SObjectType);
     }
