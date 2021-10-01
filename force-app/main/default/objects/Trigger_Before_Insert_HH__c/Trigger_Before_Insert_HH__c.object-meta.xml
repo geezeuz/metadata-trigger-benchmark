@@ -153,12 +153,12 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Trigger Before Insert TAFModified</label>
+    <label>Trigger Before Insert HH</label>
     <nameField>
-        <label>Trigger Before Insert Name</label>
+        <label>Trigger Before Insert HH Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Trigger Before Insert TAFModifieds</pluralLabel>
+    <pluralLabel>Trigger Before Insert HHs</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

@@ -1,9 +1,9 @@
-public with sharing class MetadataTriggerServiceModified {
+public with sharing class MetadataTriggerServiceHH {
     public class MetadataTriggerServiceException extends Exception {
     }
     private String objType = '';
 
-    public MetadataTriggerServiceModified(String objectTypeName) {
+    public MetadataTriggerServiceHH(String objectTypeName) {
         this.objType = objectTypeName;
     }
 

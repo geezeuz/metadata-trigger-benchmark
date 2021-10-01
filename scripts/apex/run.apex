@@ -5,9 +5,10 @@
 // new RecordAutomationBenchmarking().runBeforeSaveFieldUpdate();
 // new RecordAutomationBenchmarking().runFlowAfterInsert();
 // new RecordAutomationBenchmarking().runProcessBuilderOnInsertBenchmark();
-new RecordAutomationBenchmarking().runTriggerBeforeInsert();
+// new RecordAutomationBenchmarking().runTriggerBeforeInsert(); 
 // new RecordAutomationBenchmarking().runWorkflowUpdateFieldOnInsertBenchmark();
 // new RecordAutomationBenchmarking().runBeforeDeleteFlowInsertChildRecordsBenchmark();
 // new RecordAutomationBenchmarking().runBeforeDeleteTriggerInsertChildRecordsBenchmark();
 // new RecordAutomationBenchmarking().runSingleFlowMultipleCriteriaEvalOnInsertBenchmark();
 // new RecordAutomationBenchmarking().runMultipleFlowSingleCriteriaEvalOnInsertBenchmark();
+new RecordAutomationBenchmarking().runTriggerBeforeInsertHH();

@@ -34,6 +34,15 @@ Total number of records retrieved: 10.
 
 
 
+// #region Hector Herrera
+    #RESULTS BEFORE INSERT
+
+        COUNT(ID)  BENCHMARK_NAME__C                       AVG(DURATION_MILLISECONDS__C)
+        ─────────  ──────────────────────────────────────  ─────────────────────────────
+        15         Trigger Before Insert (Hector Herrera)  62.2
+    
+// #endregion
+
 // #region Apex Trigger
     #RESULTS AFTER TRIGGER WITH LOGIC
 

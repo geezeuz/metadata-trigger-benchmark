@@ -37,9 +37,9 @@
  *
  * @group Trigger Recipes
  */
-public with sharing class MetadataTriggerHandlerModified extends TriggerHandler {
+public with sharing class MetadataTriggerHandlerHH extends TriggerHandler {
     @testVisible
-    private MetadataTriggerServiceModified mts;
+    private MetadataTriggerServiceHH mts;
 
     @testVisible
     private List<Metadata_Driven_Trigger__mdt> tryggers;
@@ -50,13 +50,13 @@ public with sharing class MetadataTriggerHandlerModified extends TriggerHandler 
     /**
      * @description Constructor used by live triggers.
      */
-    public MetadataTriggerHandlerModified() {
-        this.mts = new MetadataTriggerServiceModified(
-            MetadataTriggerServiceModified.getSobjectType()
+    public MetadataTriggerHandlerHH() {
+        this.mts = new MetadataTriggerServiceHH(
+            MetadataTriggerServiceHH.getSobjectType()
         );
     }
 
-    public MetadataTriggerHandlerModified(MetadataTriggerServiceModified mts) {
+    public MetadataTriggerHandlerHH(MetadataTriggerServiceHH mts) {
         this.mts = mts;
     }
 
